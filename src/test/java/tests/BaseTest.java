@@ -24,8 +24,9 @@ public class BaseTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUpTest(){
-       chromeOptions = new ChromeOptions();
+        chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--incognito");
+        chromeOptions.addArguments("--start-maximized");
       /* chromeOptions.addArguments("--kiosk");
        chromeOptions.addArguments("screenshot");
       chromeOptions.addArguments("--headless");

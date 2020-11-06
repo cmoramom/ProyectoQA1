@@ -5,7 +5,10 @@ utilities\Waits$1.class
 tests\BaseTest.class
 pageObjects\ProductPage.class
 utilities\Waits.class
+dataProviders\productsDataProvider$1.class
+dataProviders\productsDataProvider.class
 tests\RegisterTest.class
+pojos\productData.class
 utilities\Waits$2.class
 pageObjects\BasePage.class
 tests\PriceTest.class

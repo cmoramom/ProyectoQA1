@@ -6,6 +6,8 @@ import pageObjects.CartPage;
 import pageObjects.HomePage;
 import pageObjects.ProductPage;
 import utilities.Waits;
+import dataProviders.productsDataProvider;
+import pojos.productData;
 
 public class PurchaseOrderTest extends  BaseTest {
 
@@ -13,8 +15,8 @@ public class PurchaseOrderTest extends  BaseTest {
         super(browser);
     }
 
-    @Test(groups = {"sanity"})
-    public void doNotAllowedPurchase(){
+    @Test(groups = {"sanity"}, dataProvider = "getProductsFromJson", dataProviderClass = productsDataProvider.class, description = "List of products to test")
+    public void doNotAllowedPurchase(productData products){
 
         HomePage home = new HomePage(driver, getBaseURL());
         ProductPage product = new ProductPage(driver);
@@ -22,17 +24,17 @@ public class PurchaseOrderTest extends  BaseTest {
         Waits wait = new Waits(driver);
 
         home.goToPage();
-        home.doSearch("Macbook");
-        //Assert.assertTrue(product.getProductTile().size() > 0,"Product Found");
-        System.out.println("Hola usuario bienvenido");
+        home.doSearch(products.getName());
+
+
 
         if(!(product.getProductTile().size() > 0)) {
-            Assert.fail("Empty list");
+            Assert.fail("Empty Products list");
         }
         product.doBuyProduct();
         wait.waitForJSandJQueryToLoad();
         if(!product.getSuccessModal().isDisplayed()){
-            Assert.fail("Product do not added");
+            Assert.fail("Product not added");
         }
 
         product.goToCart();
