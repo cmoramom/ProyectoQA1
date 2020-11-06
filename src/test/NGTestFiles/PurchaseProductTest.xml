@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite  name="Purchase Suite">
+    <test name="Purchase Product Test">
+        <groups>
+            <run>
+                <include name="sanity" />
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.PurchaseOrderTest"/>
+        </classes>
+
+    </test>
+
+
+
+
+</suite>

@@ -1,0 +1,13 @@
+pageObjects\RegisterPage.class
+tests\PurchaseOrderTest.class
+pageObjects\HomePage.class
+utilities\Waits$1.class
+tests\BaseTest.class
+pageObjects\ProductPage.class
+utilities\Waits.class
+tests\RegisterTest.class
+utilities\Waits$2.class
+pageObjects\BasePage.class
+tests\PriceTest.class
+pageObjects\CartPage.class
+utilities\capabilitiesTest.class
