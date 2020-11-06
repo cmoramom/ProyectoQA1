@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-05T01:50:06 CST" name="Price Test Suite" finished-at="2020-11-05T01:50:19 CST" duration-ms="12932">
+  <suite started-at="2020-11-05T23:14:53 CST" name="Price Test Suite" finished-at="2020-11-05T23:15:19 CST" duration-ms="25779">
     <groups>
       <group name="sanity">
-        <method signature="PriceTest.doCheckPrice()[pri:0, instance:tests.PriceTest@18ca3c62]" name="doCheckPrice" class="tests.PriceTest"/>
+        <method signature="PriceTest.doCheckPrice()[pri:0, instance:tests.PriceTest@742d4e15]" name="doCheckPrice" class="tests.PriceTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2020-11-05T01:50:06 CST" name="Check Price Test" finished-at="2020-11-05T01:50:19 CST" duration-ms="12932">
+    <test started-at="2020-11-05T23:14:53 CST" name="Check Price Test" finished-at="2020-11-05T23:15:19 CST" duration-ms="25779">
       <class name="tests.PriceTest">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.PriceTest@18ca3c62]" started-at="2020-11-05T01:50:06 CST" name="setUpTest" finished-at="2020-11-05T01:50:12 CST" duration-ms="5972" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.PriceTest@742d4e15]" started-at="2020-11-05T23:14:53 CST" name="setUpTest" finished-at="2020-11-05T23:15:08 CST" duration-ms="15303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="doCheckPrice()[pri:0, instance:tests.PriceTest@18ca3c62]" started-at="2020-11-05T01:50:13 CST" name="doCheckPrice" finished-at="2020-11-05T01:50:19 CST" duration-ms="6441" status="PASS">
+        <test-method signature="doCheckPrice()[pri:0, instance:tests.PriceTest@742d4e15]" started-at="2020-11-05T23:15:09 CST" name="doCheckPrice" finished-at="2020-11-05T23:15:18 CST" duration-ms="9575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doCheckPrice -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PriceTest@18ca3c62]" started-at="2020-11-05T01:50:19 CST" name="tearDown" finished-at="2020-11-05T01:50:19 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PriceTest@742d4e15]" started-at="2020-11-05T23:15:18 CST" name="tearDown" finished-at="2020-11-05T23:15:18 CST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,0 +1,10 @@
+{
+  "dataset" : [
+    {
+      "name" : "Macbook",
+      "p_euro": "518.16€",
+      "p_dolar": "$602.00",
+      "p_sterling": "£454.10"
+    }
+  ]
+}

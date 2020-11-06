@@ -24,7 +24,7 @@ public class PurchaseOrderTest extends  BaseTest {
         home.goToPage();
         home.doSearch("Macbook");
         //Assert.assertTrue(product.getProductTile().size() > 0,"Product Found");
-
+        System.out.println("Hola usuario bienvenido");
 
         if(!(product.getProductTile().size() > 0)) {
             Assert.fail("Empty list");
@@ -32,7 +32,7 @@ public class PurchaseOrderTest extends  BaseTest {
         product.doBuyProduct();
         wait.waitForJSandJQueryToLoad();
         if(!product.getSuccessModal().isDisplayed()){
-            Assert.fail("product not added");
+            Assert.fail("Product do not added");
         }
 
         product.goToCart();

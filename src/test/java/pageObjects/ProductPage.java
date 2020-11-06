@@ -44,7 +44,9 @@ public class ProductPage extends BasePage {
         super(driver);
     }
 
-
+    public void goToCart(){
+        this.getCartButton().click();
+    }
 
     public void doBuyProduct(){
     this.getAddToCartButton().click();
@@ -53,7 +55,5 @@ public class ProductPage extends BasePage {
 
     }
 
-    public void goToCart(){
-        this.getCartButton().click();
-    }
+
 }
