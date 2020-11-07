@@ -29,14 +29,6 @@ public class RegisterTest  extends BaseTest {
     }
 
 
-    @AfterTest(alwaysRun = true)
-    public void tearDown() {
-        driver.quit();
-    }
-
-
-
-
 
 
 }
