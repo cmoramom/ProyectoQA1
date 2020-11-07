@@ -9,10 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Price Test Suite</th></tr>
-<tr><td><a href="#t0">Check Price Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,117</td><td>sanity</td><td></td></tr>
+<tr><td><a href="#t0">Check Price Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,370</td><td>sanity</td><td></td></tr>
+<tr><th colspan="8">Register Suite</th></tr>
+<tr class="stripe"><td><a href="#t1">Register Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,996</td><td>sanity</td><td></td></tr>
+<tr><th colspan="8">Purchase Suite</th></tr>
+<tr><td><a href="#t2">Purchase Product Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">11,181</td><td>sanity</td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">33,547</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Price Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Check Price Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.PriceTest</td><td><a href="#m0">doCheckPrice</a></td><td rowspan="1">1604687464875</td><td rowspan="1">6121</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Price Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Check Price Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.PriceTest</td><td><a href="#m0">doCheckPrice</a></td><td rowspan="1">1604778008037</td><td rowspan="1">4839</td></tr></tbody>
+<tbody><tr><th colspan="4">Register Suite</th></tr></tbody><tbody id="t1"><tr><th colspan="4">Register Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.RegisterTest</td><td><a href="#m1">doRegister</a></td><td rowspan="1">1604777985934</td><td rowspan="1">6366</td></tr></tbody>
+<tbody><tr><th colspan="4">Purchase Suite</th></tr></tbody><tbody id="t2"><tr><th colspan="4">Purchase Product Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.PurchaseOrderTest</td><td><a href="#m2">doNotAllowedPurchase</a></td><td rowspan="1">1604777996768</td><td rowspan="1">6958</td></tr></tbody>
 </table>
-<h2>Check Price Test</h2><h3 id="m0">tests.PriceTest#doCheckPrice</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pojos.productData@759a678a</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Check Price Test</h2><h3 id="m0">tests.PriceTest#doCheckPrice</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pojos.productData@31940704</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Register Test</h2><h3 id="m1">tests.RegisterTest#doRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Purchase Product Test</h2><h3 id="m2">tests.PurchaseOrderTest#doNotAllowedPurchase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>pojos.productData@53e93fb7</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class, &apos;alert alert-success&apos;)]&quot;}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-NNEH4MU1&apos;, ip: &apos;192.168.43.69&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\cmoramom\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fdf12b0d78fb5e728ad307e69132faf2
+*** Element info: {Using=xpath, value=//div[contains(@class, &apos;alert alert-success&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.ProductPage.getSuccessModal(ProductPage.java:32)
+	at tests.PurchaseOrderTest.doNotAllowedPurchase(PurchaseOrderTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

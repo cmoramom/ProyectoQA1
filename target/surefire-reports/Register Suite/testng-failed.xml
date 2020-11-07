@@ -11,8 +11,8 @@
       <class name="tests.RegisterTest">
         <methods>
           <include name="doRegister"/>
-          <include name="tearDown"/>
           <include name="setUpTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- tests.RegisterTest -->
     </classes>

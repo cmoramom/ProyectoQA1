@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.169 s - in TestSuite
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.133 s <<< FAILURE! - in TestSuite
+doNotAllowedPurchase(tests.PurchaseOrderTest)  Time elapsed: 6.974 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'alert alert-success')]"}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-NNEH4MU1', ip: '192.168.43.69', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\cmoramom\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fdf12b0d78fb5e728ad307e69132faf2
+*** Element info: {Using=xpath, value=//div[contains(@class, 'alert alert-success')]}
+	at tests.PurchaseOrderTest.doNotAllowedPurchase(PurchaseOrderTest.java:43)
+

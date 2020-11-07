@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Price Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Check Price Test(failed)" verbose="0">
+<suite name="Failed suite [Purchase Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Purchase Product Test(failed)" verbose="0">
     <groups>
       <run>
         <include name="sanity"/>
       </run>
     </groups>
     <classes>
-      <class name="tests.PriceTest">
+      <class name="tests.PurchaseOrderTest">
         <methods>
           <include name="setUpTest"/>
-          <include name="doCheckPrice"/>
           <include name="tearDown"/>
+          <include name="doNotAllowedPurchase" invocation-numbers="0"/>
         </methods>
-      </class> <!-- tests.PriceTest -->
+      </class> <!-- tests.PurchaseOrderTest -->
     </classes>
-  </test> <!-- Check Price Test(failed) -->
-</suite> <!-- Failed suite [Price Test Suite] -->
+  </test> <!-- Purchase Product Test(failed) -->
+</suite> <!-- Failed suite [Purchase Suite] -->

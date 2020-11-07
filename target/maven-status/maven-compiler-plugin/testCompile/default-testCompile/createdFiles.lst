@@ -8,6 +8,7 @@ utilities\Waits.class
 dataProviders\productsDataProvider$1.class
 dataProviders\productsDataProvider.class
 tests\RegisterTest.class
+utilities\GenerateEmail.class
 pojos\productData.class
 utilities\Waits$2.class
 pageObjects\BasePage.class

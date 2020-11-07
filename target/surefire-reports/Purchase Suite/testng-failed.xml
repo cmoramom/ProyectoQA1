@@ -12,7 +12,7 @@
         <methods>
           <include name="setUpTest"/>
           <include name="tearDown"/>
-          <include name="doNotAllowedPurchase"/>
+          <include name="doNotAllowedPurchase" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.PurchaseOrderTest -->
     </classes>

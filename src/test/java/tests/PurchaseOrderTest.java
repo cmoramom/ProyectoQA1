@@ -24,6 +24,7 @@ public class PurchaseOrderTest extends  BaseTest {
         Waits wait = new Waits(driver);
 
         home.goToPage();
+        wait.untilElementExists(home.getSearchTextBox());
         home.doSearch(products.getName());
 
 
@@ -39,6 +40,7 @@ public class PurchaseOrderTest extends  BaseTest {
 
         product.goToCart();
         wait.waitForJSandJQueryToLoad();
+        wait.untilElementExists(product.getSuccessModal());
         Assert.assertTrue(cart.getAlertProductNotStock().isDisplayed(), "Alert Present");
 
 
