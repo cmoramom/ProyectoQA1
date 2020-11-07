@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utilities.GenerateEmail;
 
 public class RegisterPage extends BasePage {
 
@@ -77,10 +78,12 @@ public class RegisterPage extends BasePage {
     }
 
     public void doRegister(){
-        String email = "cmora@gmail.com";
+        GenerateEmail email = new GenerateEmail();
+
+        String emailGen =  email.genEMail()+"@gmail.com";
         this.setNameTextBox().sendKeys("Carlos");
         this.setLastNameTextBox().sendKeys("Mora");
-        this.setEmailTextBox().sendKeys(email);
+        this.setEmailTextBox().sendKeys(emailGen);
         this.setTelTextBox().sendKeys("88888888");
         this.setPassTextBoxtBox().sendKeys("qw234&&20AL123321");
         this.setConfirmPassTextBox().sendKeys("qw234&&20AL123321");
