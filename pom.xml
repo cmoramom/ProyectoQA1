@@ -76,8 +76,8 @@
                     </argLine>
                     <useSystemClassLoader>false</useSystemClassLoader>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>src/test/NGTestFiles/RegisterTest.xml</suiteXmlFile>-->
-<!--                        <suiteXmlFile>src/test/NGTestFiles/PurchaseProductTest.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/NGTestFiles/RegisterTest.xml</suiteXmlFile>
+                       <suiteXmlFile>src/test/NGTestFiles/PurchaseProductTest.xml</suiteXmlFile>
                         <suiteXmlFile>src/test/NGTestFiles/PriceTest.xml</suiteXmlFile>
 
                     </suiteXmlFiles>

@@ -18,6 +18,8 @@ public class ProductPage extends BasePage {
 
 
 
+
+
     public List<WebElement> getProductTile() {
         return driver.findElements(this.productTitle);
     }
